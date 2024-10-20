@@ -50,18 +50,33 @@ namespace ProductStore.Web.Controllers
         [HttpPut("{id:int}")]
         public async Task<ActionResult<int>> UpdateProductCategory(int id, [FromForm] ProductsCategoryRequest productsRequest)
         {
-            var productId = await _productsCategoryService.UpdateProductCategory(id,
-                productsRequest.Name,
-                productsRequest.Description
-                );
+            var categories = await _productsCategoryService.GetAllProductCategory();
 
-            return Ok($"Success!");
+            if (!categories.Any(c => c.Id == id))
+            {
+                return NotFound($"Category with id = {id} not found.");
+            }
+
+            await _productsCategoryService.UpdateProductCategory(id, productsRequest.Name, productsRequest.Description);
+
+            return Ok("Success!");
         }
+
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<int>> DeleteProductCategory(int id)
         {
-            return Ok(await _productsCategoryService.DeleteProductCategory(id));
+            var categories = await _productsCategoryService.GetAllProductCategory();
+
+            if (!categories.Any(c => c.Id == id))
+            {
+                return NotFound($"Category with id = {id} not found.");
+            }
+
+            await _productsCategoryService.DeleteProductCategory(id);
+
+            return Ok("Success!");
         }
+
     }
 }

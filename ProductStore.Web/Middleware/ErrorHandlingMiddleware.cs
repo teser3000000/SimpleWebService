@@ -28,7 +28,15 @@ namespace ProductStore.Web.Middleware
         {
             var response = context.Response;
             response.ContentType = "application/json";
-            response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+            if (exception is NotFoundException)
+            {
+                response.StatusCode = (int)HttpStatusCode.NotFound;
+            }
+            else
+            {
+                response.StatusCode = (int)HttpStatusCode.InternalServerError;
+            }
 
             var result = JsonConvert.SerializeObject(new
             {
@@ -38,5 +46,6 @@ namespace ProductStore.Web.Middleware
 
             return response.WriteAsync(result);
         }
+
     }
 }

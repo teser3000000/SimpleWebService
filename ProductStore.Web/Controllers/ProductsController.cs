@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using ProductStore.Application.Services;
 using ProductStore.Core.Abstractions;
 using ProductStore.Core.Models;
 using ProductStore.Web.Contracts;
@@ -45,6 +46,13 @@ namespace ProductStore.Web.Controllers
         [HttpPut("{id:int}")]
         public async Task<ActionResult<int>> UpdateProduct(int id, [FromForm] ProductsRequest productsRequest)
         {
+            var products = await _productsService.GetAllProducts();
+
+            if (!products.Any(p => p.Id == id))
+            {
+                return NotFound($"Product with id = {id} not found.");
+            }
+
             var productId = await _productsService.UpdateProduct(id,
                 productsRequest.Name,
                 productsRequest.Description,
@@ -54,10 +62,21 @@ namespace ProductStore.Web.Controllers
             return Ok($"Success!");
         }
 
+
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<int>> DeleteProduct(int id)
         {
-            return Ok(await _productsService.DeleteProduct(id));
+            var products = await _productsService.GetAllProducts();
+
+            if (!products.Any(p => p.Id == id))
+            {
+                return NotFound($"Product with id = {id} not found.");
+            }
+
+            await _productsService.DeleteProduct(id);
+
+            return Ok("Success!");
         }
+
     }
 }

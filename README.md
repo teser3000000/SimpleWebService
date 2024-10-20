@@ -15,5 +15,11 @@
   клонируйте проект с GitHub с помощью следующей команды:
    git clone https://github.com/teser3000000/SimpleWebService
 
+- Проект можно открыть по пути: SimpleWebService\ProductStore.Web\Task.sln
+
 - После клонирования проекта перейдите в папку ProductStore.DataAccess и выполните команду для применения миграций и обновления базы данных:
    dotnet ef database update --project ../ProductStore.DataAccess
+
+ Готово! Можно запускать проект. 
+ Swagger для тестирования API: 
+               По умолчанию Swagger позволит тестировать конечные точки напрямую через веб-интерфейс.

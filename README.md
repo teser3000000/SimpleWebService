@@ -1,7 +1,7 @@
 # SimpleWebService
  
 Требования
-   - .NET SDK 7.0 или новее
+   - .NET SDK 8.0
    - SQLite
     Необходимые пакеты:
        - Microsoft.EntityFrameworkCore

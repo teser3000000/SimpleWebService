@@ -11,8 +11,8 @@ using ProductStore.DataAccess;
 namespace ProductStore.DataAccess.Migrations
 {
     [DbContext(typeof(ProductStoreDbContext))]
-    [Migration("20241020113415_UpdateProductCategoryToRecord")]
-    partial class UpdateProductCategoryToRecord
+    [Migration("20241020144040_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

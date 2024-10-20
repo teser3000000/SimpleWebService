@@ -20,3 +20,4 @@ C:\Users\User\source\repos\SimpleWebService\ProductStore.Core\obj\Debug\net8.0\P
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Core\obj\Debug\net8.0\refint\ProductStore.Core.dll
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Core\obj\Debug\net8.0\ProductStore.Core.pdb
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Core\obj\Debug\net8.0\ref\ProductStore.Core.dll
+C:\Users\User\source\repos\SimpleWebService\ProductStore.Core\obj\Debug\net8.0\ProductStore.Core.sourcelink.json

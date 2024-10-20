@@ -32,3 +32,4 @@ C:\Users\User\source\repos\SimpleWebService\ProductStore.DataAccess\obj\Debug\ne
 C:\Users\User\source\repos\SimpleWebService\ProductStore.DataAccess\obj\Debug\net8.0\ProductStore.DataAccess.pdb
 C:\Users\User\source\repos\SimpleWebService\ProductStore.DataAccess\obj\Debug\net8.0\ProductStore.DataAccess.genruntimeconfig.cache
 C:\Users\User\source\repos\SimpleWebService\ProductStore.DataAccess\obj\Debug\net8.0\ref\ProductStore.DataAccess.dll
+C:\Users\User\source\repos\SimpleWebService\ProductStore.DataAccess\obj\Debug\net8.0\ProductStore.DataAccess.sourcelink.json

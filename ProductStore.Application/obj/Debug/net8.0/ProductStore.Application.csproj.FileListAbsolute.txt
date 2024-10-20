@@ -28,3 +28,4 @@ C:\Users\User\source\repos\SimpleWebService\ProductStore.Application\obj\Debug\n
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Application\obj\Debug\net8.0\refint\ProductStore.Application.dll
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Application\obj\Debug\net8.0\ProductStore.Application.pdb
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Application\obj\Debug\net8.0\ref\ProductStore.Application.dll
+C:\Users\User\source\repos\SimpleWebService\ProductStore.Application\obj\Debug\net8.0\ProductStore.Application.sourcelink.json

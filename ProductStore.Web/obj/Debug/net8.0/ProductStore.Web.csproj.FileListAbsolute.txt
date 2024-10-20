@@ -278,3 +278,4 @@ C:\Users\User\source\repos\SimpleWebService\ProductStore.Web\obj\Debug\net8.0\re
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Web\obj\Debug\net8.0\ProductStore.Web.pdb
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Web\obj\Debug\net8.0\ProductStore.Web.genruntimeconfig.cache
 C:\Users\User\source\repos\SimpleWebService\ProductStore.Web\obj\Debug\net8.0\ref\ProductStore.Web.dll
+C:\Users\User\source\repos\SimpleWebService\ProductStore.Web\obj\Debug\net8.0\ProductStore.Web.sourcelink.json

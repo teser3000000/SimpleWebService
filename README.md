@@ -17,6 +17,9 @@
 
 - Проект можно открыть по пути: SimpleWebService\ProductStore.Web\Task.sln
 
+- Проверьте установку dotnet-ef: Выполните команду:
+   dotnet tool install --global dotnet-ef
+
 - После клонирования проекта перейдите в папку ProductStore.DataAccess и выполните команду для применения миграций и обновления базы данных:
    dotnet ef database update --project ../ProductStore.DataAccess
 
